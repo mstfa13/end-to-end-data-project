@@ -1,0 +1,50 @@
+table_id,source_type,source_filename,destination_filename,destination_path,primary_key,table_column,table_name,is_PK?,can_be_nulled,data_type,unique?
+brands_stg,stg,brands,brands,Mostafa_Landing/brands,brand_id,brands,brand_id,Y,N,int,Y
+brands_stg,stg,brands,brands,Mostafa_Landing/brands,brand_id,brands,brand_name,N,Y,string,N
+categories_stg,stg,categories,categories,Mostafa_Landing/categories,categorie_id,categories,category_id,Y,N,int,Y
+categories_stg,stg,categories,categories,Mostafa_Landing/categories,categorie_id,categories,category_name,N,Y,string,N
+customers_stg,stg,customers,customers,Mostafa_Landing/customers,customer_id,customers,customer_id,Y,N,int,Y
+customers_stg,stg,customers,customers,Mostafa_Landing/customers,customer_id,customers,first_name,N,Y,string,N
+customers_stg,stg,customers,customers,Mostafa_Landing/customers,customer_id,customers,last_name,N,Y,string,N
+customers_stg,stg,customers,customers,Mostafa_Landing/customers,customer_id,customers,phone,N,Y,int,N
+customers_stg,stg,customers,customers,Mostafa_Landing/customers,customer_id,customers,email,N,Y,string,Y
+customers_stg,stg,customers,customers,Mostafa_Landing/customers,customer_id,customers,street,N,Y,string,N
+customers_stg,stg,customers,customers,Mostafa_Landing/customers,customer_id,customers,city,N,Y,string,N
+customers_stg,stg,customers,customers,Mostafa_Landing/customers,customer_id,customers,state,N,Y,string,N
+customers_stg,stg,customers,customers,Mostafa_Landing/customers,customer_id,customers,zip_code,N,Y,string,N
+products_stg,stg,products,products,Mostafa_Landing/products,product_id,products,product_id,Y,N,int,Y
+products_stg,stg,products,products,Mostafa_Landing/products,product_id,products,product_name,N,Y,string,N
+products_stg,stg,products,products,Mostafa_Landing/products,product_id,products,brand_id,N,Y,int,N
+products_stg,stg,products,products,Mostafa_Landing/products,product_id,products,category_id,N,Y,int,N
+products_stg,stg,products,products,Mostafa_Landing/products,product_id,products,model_year,N,Y,int,N
+products_stg,stg,products,products,Mostafa_Landing/products,product_id,products,list_price,N,Y,int,N
+staff_stg,stg,staffs,staffs,Mostafa_Landing/staff,staff_id,staffs,staff_id,Y,N,int,Y
+staff_stg,stg,staffs,staffs,Mostafa_Landing/staff,staff_id,staffs,first_name,N,Y,string,N
+staff_stg,stg,staffs,staffs,Mostafa_Landing/staff,staff_id,staffs,last_name,N,Y,string,N
+staff_stg,stg,staffs,staffs,Mostafa_Landing/staff,staff_id,staffs,email,N,Y,string,Y
+staff_stg,stg,staffs,staffs,Mostafa_Landing/staff,staff_id,staffs,phone,N,Y,int,N
+staff_stg,stg,staffs,staffs,Mostafa_Landing/staff,staff_id,staffs,active,N,Y,int,Y
+staff_stg,stg,staffs,staffs,Mostafa_Landing/staff,staff_id,staffs,store_id,N,Y,int,N
+staff_stg,stg,staffs,staffs,Mostafa_Landing/staff,staff_id,staffs,manager_id,N,Y,int,Y
+stores_stg,stg,stores,stores,Mostafa_Landing/stores,store_id,stores,store_id,Y,N,int,Y
+stores_stg,stg,stores,stores,Mostafa_Landing/stores,store_id,stores,store_name,N,Y,string,N
+stores_stg,stg,stores,stores,Mostafa_Landing/stores,store_id,stores,phone,N,Y,int,N
+stores_stg,stg,stores,stores,Mostafa_Landing/stores,store_id,stores,email,N,Y,string,Y
+stores_stg,stg,stores,stores,Mostafa_Landing/stores,store_id,stores,street,N,Y,string,N
+stores_stg,stg,stores,stores,Mostafa_Landing/stores,store_id,stores,city,N,Y,string,N
+stores_stg,stg,stores,stores,Mostafa_Landing/stores,store_id,stores,state,N,Y,string,N
+stores_stg,stg,stores,stores,Mostafa_Landing/stores,store_id,stores,zip_code,N,Y,int,N
+order_items_sql,sql,order_items,order_items,Mostafa_Landing/order_items,"[order_id, item_id]",order_items,order_id,Y,N,int,Y
+order_items_sql,sql,order_items,order_items,Mostafa_Landing/order_items,"[order_id, item_id]",order_items,item_id,Y,N,int,Y
+order_items_sql,sql,order_items,order_items,Mostafa_Landing/order_items,"[order_id, item_id]",order_items,product_id,N,Y,int,N
+order_items_sql,sql,order_items,order_items,Mostafa_Landing/order_items,"[order_id, item_id]",order_items,quantity,N,Y,int,N
+order_items_sql,sql,order_items,order_items,Mostafa_Landing/order_items,"[order_id, item_id]",order_items,list_price,N,Y,float,N
+order_items_sql,sql,order_items,order_items,Mostafa_Landing/order_items,"[order_id, item_id]",order_items,discount,N,Y,float,N
+order_sql,sql,order,order,Mostafa_Landing/orders,order_id,orders,order_id,Y,N,int,Y
+order_sql,sql,order,order,Mostafa_Landing/orders,order_id,orders,customer_id,N,Y,int,N
+order_sql,sql,order,order,Mostafa_Landing/orders,order_id,orders,order_status,N,Y,int,N
+order_sql,sql,order,order,Mostafa_Landing/orders,order_id,orders,order_date,N,Y,datetime,N
+order_sql,sql,order,order,Mostafa_Landing/orders,order_id,orders,required_date,N,Y,datetime,N
+order_sql,sql,order,order,Mostafa_Landing/orders,order_id,orders,shipped_date,N,Y,datetime,N
+order_sql,sql,order,order,Mostafa_Landing/orders,order_id,orders,store_id,N,Y,int,N
+order_sql,sql,order,order,Mostafa_Landing/orders,order_id,orders,staff_id,N,Y,int,N
